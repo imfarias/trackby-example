@@ -1,0 +1,10 @@
+<div style="width: 50%; float: left;">
+  <ul>
+    <li *ngFor="let item of itemList; let i = index;">
+      {{item.name}}
+      <a (click)="removeItem(i)">Remover</a>
+    </li>
+  </ul>
+
+  <button (click)="resetItemList()">Resetar Lista</button>
+</div>

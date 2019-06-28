@@ -1,20 +1,2 @@
-<div style="width: 50%; float: left;">
-  <ul>
-    <li *ngFor="let item of itemList; let i = index;">
-      {{item.name}}
-      <a (click)="removeItem(i)">Remover</a>
-    </li>
-  </ul>
-
-  <button (click)="resetItemList()">Resetar Lista</button>
-</div>
-<div style="width: 50%; float: left;">
-  <ul>
-    <li *ngFor="let item of itemListTrack; trackBy: trackFunction let i = index;">
-      {{item.name}}
-      <a (click)="removeItemTrack(i)">Remover</a>
-    </li>
-  </ul>
-
-  <button (click)="resetItemListTrack()">Resetar Lista TrackBy</button>
-</div>
+<app-root-list></app-root-list>
+<app-root-list-track-by></app-root-list-track-by>
